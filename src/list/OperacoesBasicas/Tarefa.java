@@ -1,4 +1,4 @@
-package list.tOperacoesBasicas;
+package list.OperacoesBasicas;
 
 public class Tarefa {
 	
