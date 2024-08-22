@@ -1,6 +1,6 @@
 package application;
 
-import list.Pesquisa.CatalogoLivros;
+import list.Ordenacao.OrdenacaoPessoa;
 
 public class Program {
 
@@ -31,7 +31,7 @@ public class Program {
 		
 		System.out.println("Valor total: R$" + cc.calcularValorTotal()); */
 		
-		CatalogoLivros cl = new CatalogoLivros();
+		/* CatalogoLivros cl = new CatalogoLivros();
 		cl.adicionarLivro("Livro 1", "Autor 1", 2020);
 		cl.adicionarLivro("Livro 1", "Autor 1", 2024);
 		cl.adicionarLivro("Livro 2", "Autor 2", 2021);
@@ -42,8 +42,17 @@ public class Program {
 		
 		System.out.println(cl.pesquisarPorIntervaloAnos(2022, 2024));
 		
-		System.out.println(cl.pesquisarPorTitulo("Livro 1"));
+		System.out.println(cl.pesquisarPorTitulo("Livro 1")); */ 
 		
+		OrdenacaoPessoa op = new OrdenacaoPessoa();
+		op.adicionarPessoa("Nome 1", 20, 1.56);
+		op.adicionarPessoa("Nome 2", 30, 1.80);
+		op.adicionarPessoa("Nome 3", 25, 1.70);
+		op.adicionarPessoa("Nome 4", 17, 1.56);
+		
+		
+		System.out.println(op.ordenarPorIdade());
+		System.out.println(op.ordenarPorAltura());
 	}
 
 }
