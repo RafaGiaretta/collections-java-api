@@ -1,6 +1,6 @@
 package application;
 
-import set.Pesquisa.AgendaContatos;
+import set.Ordenacao.CadastroProdutos;
 
 public class Program {
 
@@ -14,8 +14,6 @@ public class Program {
 
 		listaTarefa.removerTarefa("Tarefa 1");
 		System.out.println("Numero total de tarefas: " + listaTarefa.qtTarefas());
-		
-		
 		
 		CarrinhoDeCompras cc = new CarrinhoDeCompras();
 		cc.adicionarItem("Pera", 3.99, 7);
@@ -53,11 +51,9 @@ public class Program {
 		
 		
 		System.out.println(op.ordenarPorIdade());
-		System.out.println(op.ordenarPorAltura()); 
+		System.out.println(op.ordenarPorAltura()); 		
 		
-		
-		ConjuntoConvidados cc = new ConjuntoConvidados();
-		
+		ConjuntoConvidados cc = new ConjuntoConvidados();		
 		
 		cc.adicionarConvidado("Convidado 1", 1234);
 		cc.adicionarConvidado("Convidado 2", 5678);
@@ -70,8 +66,7 @@ public class Program {
 		
 		cc.removerConvidadoPorCodigoConvite(1234);
 		
-		cc.exibirConvidados();*/
-		
+		cc.exibirConvidados();		
 		
 		AgendaContatos ag = new AgendaContatos();
 		
@@ -84,7 +79,18 @@ public class Program {
 		
 		ag.atualizaNumeroContato("Contato 1", 2);
 		
-		ag.eContatos();
+		ag.eContatos();*/
+		
+		CadastroProdutos cp = new CadastroProdutos();
+		
+		cp.addProduto(1L, "Produto 5" , 15d, 5);
+		cp.addProduto(21L, "Produto 45" , 23d, 8);
+		cp.addProduto(1L, "Produto 15" , 154d, 5);
+		cp.addProduto(7L, "Produto 1" , 645d, 6);
+		
+		System.out.println(cp.exPorPreco());
+		
+		
 		
 	}
 
