@@ -1,10 +1,11 @@
 package application;
 
-import set.OperacoesBasicas.ConjuntoConvidados;
+import set.Pesquisa.AgendaContatos;
 
 public class Program {
 
 	public static void main(String[] args) {
+		
 		/* ListaTarefa listaTarefa = new ListaTarefa();
 		listaTarefa.addTarefa("Tarefa 1");
 		System.out.println("Numero total de tarefas: " + listaTarefa.qtTarefas());
@@ -52,7 +53,7 @@ public class Program {
 		
 		
 		System.out.println(op.ordenarPorIdade());
-		System.out.println(op.ordenarPorAltura());*/ 
+		System.out.println(op.ordenarPorAltura()); 
 		
 		
 		ConjuntoConvidados cc = new ConjuntoConvidados();
@@ -69,7 +70,21 @@ public class Program {
 		
 		cc.removerConvidadoPorCodigoConvite(1234);
 		
-		cc.exibirConvidados();
+		cc.exibirConvidados();*/
+		
+		
+		AgendaContatos ag = new AgendaContatos();
+		
+		ag.addContato("Contato 1", 1);
+		ag.addContato("Contato 1", 1);
+		ag.addContato("Contato 3", 3);
+		ag.addContato("Contato 4", 4);
+		
+		ag.eContatos();
+		
+		ag.atualizaNumeroContato("Contato 1", 2);
+		
+		ag.eContatos();
 		
 	}
 
