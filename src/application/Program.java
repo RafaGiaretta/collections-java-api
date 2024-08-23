@@ -1,6 +1,6 @@
 package application;
 
-import list.Ordenacao.OrdenacaoPessoa;
+import set.OperacoesBasicas.ConjuntoConvidados;
 
 public class Program {
 
@@ -12,11 +12,11 @@ public class Program {
 		listaTarefa.obterDescricoesTarefas();
 
 		listaTarefa.removerTarefa("Tarefa 1");
-		System.out.println("Numero total de tarefas: " + listaTarefa.qtTarefas()); */
+		System.out.println("Numero total de tarefas: " + listaTarefa.qtTarefas());
 		
 		
 		
-		/* CarrinhoDeCompras cc = new CarrinhoDeCompras();
+		CarrinhoDeCompras cc = new CarrinhoDeCompras();
 		cc.adicionarItem("Pera", 3.99, 7);
 		cc.adicionarItem("Uva", 15.50, 2);
 		cc.adicionarItem("Bala FINI", 11.40, 1);
@@ -29,7 +29,7 @@ public class Program {
 		
 		cc.exibirItens();
 		
-		System.out.println("Valor total: R$" + cc.calcularValorTotal()); */
+		System.out.println("Valor total: R$" + cc.calcularValorTotal()); 
 		
 		/* CatalogoLivros cl = new CatalogoLivros();
 		cl.adicionarLivro("Livro 1", "Autor 1", 2020);
@@ -42,7 +42,7 @@ public class Program {
 		
 		System.out.println(cl.pesquisarPorIntervaloAnos(2022, 2024));
 		
-		System.out.println(cl.pesquisarPorTitulo("Livro 1")); */ 
+		System.out.println(cl.pesquisarPorTitulo("Livro 1")); 
 		
 		OrdenacaoPessoa op = new OrdenacaoPessoa();
 		op.adicionarPessoa("Nome 1", 20, 1.56);
@@ -52,7 +52,25 @@ public class Program {
 		
 		
 		System.out.println(op.ordenarPorIdade());
-		System.out.println(op.ordenarPorAltura());
+		System.out.println(op.ordenarPorAltura());*/ 
+		
+		
+		ConjuntoConvidados cc = new ConjuntoConvidados();
+		
+		
+		cc.adicionarConvidado("Convidado 1", 1234);
+		cc.adicionarConvidado("Convidado 2", 5678);
+		cc.adicionarConvidado("Convidado 3", 9012);
+		cc.adicionarConvidado("Convidado 4", 1234);
+		
+		System.out.println("Existem " + cc.contarConvidados() + " convidados dentro do Set de Convidados");
+		
+		cc.exibirConvidados();
+		
+		cc.removerConvidadoPorCodigoConvite(1234);
+		
+		cc.exibirConvidados();
+		
 	}
 
 }
