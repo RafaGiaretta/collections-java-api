@@ -1,6 +1,6 @@
 package application;
 
-import set.Ordenacao.CadastroProdutos;
+import map.OperacoesBasicas.AgendaContatos;
 
 public class Program {
 
@@ -79,7 +79,7 @@ public class Program {
 		
 		ag.atualizaNumeroContato("Contato 1", 2);
 		
-		ag.eContatos();*/
+		ag.eContatos();
 		
 		CadastroProdutos cp = new CadastroProdutos();
 		
@@ -88,8 +88,8 @@ public class Program {
 		cp.addProduto(1L, "Produto 15" , 154d, 5);
 		cp.addProduto(7L, "Produto 1" , 645d, 6);
 		
-		System.out.println(cp.exPorPreco());
-		
+		System.out.println(cp.exPorPreco()); */
+
 		
 		
 	}
