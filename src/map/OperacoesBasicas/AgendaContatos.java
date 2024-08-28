@@ -12,7 +12,7 @@ public class AgendaContatos {
 	}
 	
 	public void adicionarContato(String nome, Integer telefone) {
-		agendaContatoMap.put(nome, telefone);
+		agendaContatoMap.put(nome, telefone);  // adiciona ou substitui, contrario do set.
 	}
 	
 	public void removerContato(String nome) {
@@ -33,4 +33,5 @@ public class AgendaContatos {
 		}
 		return numeroPorNome;
 	}
+	
 }
